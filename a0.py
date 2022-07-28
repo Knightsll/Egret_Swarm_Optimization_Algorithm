@@ -79,7 +79,6 @@ exploration = []
 
 for times in range(max_iter):
     
-    T = 100 / (1 + times)
     print(times, "\t",y_global_best)
     
     y = np.array([func(x[i, :]) for i in range(size_pop)]).reshape(size_pop)
